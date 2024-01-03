@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_categories",
+  "info": {
+    "singularName": "events-category",
+    "pluralName": "events-categories",
+    "displayName": "events/category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

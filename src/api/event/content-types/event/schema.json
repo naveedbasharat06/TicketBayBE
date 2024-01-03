@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "events",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eventType": {
+      "type": "string"
+    },
+    "DateTime": {
+      "type": "datetime"
+    },
+    "startingFrom": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "longDescription": {
+      "type": "text"
+    },
+    "lagos": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "regular": {
+      "type": "biginteger"
+    },
+    "vip": {
+      "type": "biginteger"
+    },
+    "vvip": {
+      "type": "biginteger"
+    },
+    "orgnizer": {
+      "type": "json"
+    },
+    "coupons": {
+      "type": "json"
+    }
+  }
+}
