@@ -2,12 +2,13 @@ const path = require('path');
 
 module.exports = ({ env }) => {
   const client = env('DATABASE_CLIENT', 'sqlite');
+  const os = require('os');
 
   const connections = {
     mysql: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'localhost'),
+        host: os.hostname() || env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'strapi'),
         user: env('DATABASE_USERNAME', 'strapi'),
@@ -28,7 +29,7 @@ module.exports = ({ env }) => {
     },
     mysql2: {
       connection: {
-        host: env('DATABASE_HOST', 'localhost'),
+        host: os.hostname() || env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'strapi'),
         user: env('DATABASE_USERNAME', 'strapi'),
